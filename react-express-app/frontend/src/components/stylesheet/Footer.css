@@ -1,0 +1,21 @@
+footer{ 
+    background-color: rgba(0, 123, 255, 0.9); 
+    height: auto; 
+    clear: both;
+}
+
+#bg{ 
+    background-color: rgba(0, 98, 202, 0.9); 
+}
+
+.footer-row{ 
+    margin: 0; 
+}
+
+a.footer-link, a.footer-icon{ 
+    color: lightgray; 
+}
+
+a.footer-link:hover, a.footer-icon{ 
+    color: white; 
+}

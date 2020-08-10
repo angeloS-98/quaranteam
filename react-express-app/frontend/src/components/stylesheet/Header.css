@@ -1,0 +1,32 @@
+html, body{ 
+    height: 100%; 
+}
+
+body {
+    padding-top: 70px;
+}
+
+.navbar {
+    background-color: rgba(0, 98, 202, 0.95);
+}
+
+nav button {
+    min-width: 60px;
+}
+
+.name-brand {
+    font-size: large;
+}
+
+button[name="sign-in_btn"]{
+    background-color: white;
+}
+
+button[name="sign-in_btn"]:hover{
+    background-color: inherit;
+    border-color: white;
+}
+
+button[name="sign-up_btn"]:hover{
+    color: #0092ff;
+}
