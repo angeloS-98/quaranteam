@@ -93,7 +93,7 @@ class Registration extends Component{
             });
 
             /* --- Visualizza form di registrazione host e impostazione valori obbligatori --- */
-            $('button[type="button"]').click(function(){
+            $('button[name="host_form"]').click(function(){
                 $('form').attr('action', 'host/registrazioneHost');
 
                 $('#buttonContainer').hide("normal");
@@ -259,7 +259,7 @@ class Registration extends Component{
                             </div>
 
                             <div class="d-flex justify-content-center col-sm-6 col-12 mb-3 mb-sm-0">
-                                <button type="button" class="btn btn-primary">Registrati come host</button>
+                                <button type="button" class="btn btn-primary" name="host_form">Registrati come host</button>
                             </div>
                         </div>
                     </div>
