@@ -7,6 +7,20 @@
 var app = require('../app');
 var debug = require('debug')('backend:server');
 var http = require('http');
+var https = require("https");
+var fs = require('fs');
+
+https.createServer(
+  {
+    key: fs.readFileSync("server.key"),
+    cert: fs.readFileSync("server.cert"),
+  },
+  app
+).listen(8080, function () {
+  console.log(
+    "Example app listening on port 8080! Go to https://localhost:3000/"
+  );
+});
 
 /**
  * Get port from environment and store in Express.
